@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Memória de Pernambuco VR — Entregável</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#080816;
+      --card:#0f1220;
+      --accent:#00e0a8; /* verde/ciano futurista */
+      --accent-2:#7b61ff; /* roxo secundário */
+      --muted:#9aa0b4;
+      --glass: rgba(255,255,255,0.04);
+      --glass-2: rgba(255,255,255,0.02);
+      --btn-shadow: 0 8px 30px rgba(123,97,255,0.14);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg) 0%, #0b0d1a 100%);color:#e6eef8;}
+
+    .container{max-width:1100px;margin:36px auto;padding:28px;}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:72px;height:72px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;box-shadow:var(--btn-shadow)}
+    .logo strong{font-size:22px;color:#081;transform:skewX(-6deg)}
+    h1{font-size:22px;margin:0;font-weight:800}
+    p.lead{margin:0;color:var(--muted)}
+
+    main{display:grid;grid-template-columns:1fr 380px;gap:22px;margin-top:20px}
+
+    /* Card principal */
+    .card{background:linear-gradient(180deg,var(--card), rgba(255,255,255,0.02));padding:18px;border-radius:12px;box-shadow: 0 6px 20px rgba(3,6,22,0.6)}
+
+    /* Left column */
+    .video-wrap{position:relative;padding-top:56.25%;border-radius:10px;overflow:hidden;background:var(--glass-2);border:1px solid rgba(255,255,255,0.03)}
+    .video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+    .description{margin-top:14px;color:var(--muted);line-height:1.5}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+    .gallery img{width:100%;height:80px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
+
+    /* Right column */
+    aside{display:flex;flex-direction:column;gap:16px}
+
+    .apk-card{padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center}
+    .apk-title{font-weight:700}
+
+    .btn-apk{display:inline-flex;align-items:center;gap:12px;padding:14px 20px;border-radius:14px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#041025;font-weight:800;text-decoration:none;box-shadow:var(--btn-shadow);transform:translateY(0);transition:transform .18s ease, box-shadow .18s ease}
+    .btn-apk:active{transform:translateY(2px)}
+    .btn-apk .icon{width:28px;height:28px;border-radius:7px;background:rgba(255,255,255,0.9);display:inline-flex;align-items:center;justify-content:center;font-weight:800}
+
+    .meta{display:flex;flex-direction:column;gap:6px;color:var(--muted);font-size:14px}
+
+    /* Contacts / CTA */
+    .contact-card{padding:14px;border-radius:12px;background:linear-gradient(90deg, rgba(123,97,255,0.06), rgba(0,224,168,0.03));border:1px solid rgba(255,255,255,0.03)}
+    .contacts{display:flex;flex-direction:column;gap:8px}
+    .contact-list{display:flex;gap:8px;flex-wrap:wrap}
+    .contact-list a{padding:8px 12px;border-radius:10px;background:rgba(255,255,255,0.03);text-decoration:none;color:var(--accent);font-weight:600}
+
+    .cta{margin-top:10px;padding:12px;border-radius:10px;background:linear-gradient(90deg,var(--accent-2),var(--accent));text-align:center;color:#021;cursor:pointer;font-weight:800}
+
+    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:13px;padding:12px}
+
+    /* Responsivo */
+    @media (max-width:980px){main{grid-template-columns:1fr;}
+      .gallery img{height:90px}
+      .logo{width:56px;height:56px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"><strong>SIP</strong></div>
+        <div>
+          <h1><!-- EDITAR: Título do projeto --> Templo de Zeus - SIP</h1>
+          <p class="lead"><!-- EDITAR: Subtítulo curto --> Demonstração das habilidades para vaga de Tech Artist</p>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div class="meta">
+          <div><!-- EDITAR: Data de entrega ou versão --> Versão: 0.9 • Entregue em: 17/11/2025</div>
+          <div><!-- EDITAR: Nome do autor / empresa --> Desenvolvido por: Josivan Pedro da Silva</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- === COLUNA ESQUERDA === -->
+      <div class="card">
+
+        <!-- GALERIA DE IMAGENS -->
+        <div style="margin-top:12px">
+          <strong>Imagens do projeto</strong>
+
+          <!-- GALERIA -->
+          <div class="gallery" style="margin-top:8px">
+
+            <!-- Primeiras 3 imagens -->
+            <img src="https://i.imgur.com/MT4sWo1.jpeg" alt="Screenshot 1">
+            <img src="https://i.imgur.com/NDrmxHs.jpeg" alt="Screenshot 2">
+            <img src="https://i.imgur.com/RPkWpxS.jpeg" alt="Screenshot 3">
+
+            <!-- MAIS 3 imagens abaixo -->
+            <img src="https://i.imgur.com/JQbUlWi.jpeg" alt="Screenshot 4">
+            <img src="https://i.imgur.com/qyNSXDN.jpeg" alt="Screenshot 5">
+            <img src="https://i.imgur.com/PA84hRV.jpeg" alt="Screenshot 6">
+
+          </div>
+        </div>
+
+        <!-- DESCRIÇÃO -->
+        <div class="description">
+          <!-- EDITAR: descrição curta do projeto (2-4 linhas) -->
+          <strong>Descrição:</strong>
+          <div style="margin-top:6px">Jogo de passeio no templo divino de Zeus, nele é possivel observar diversas tecnicas de otimização, assim com diveros efeitos visuais criados a partir de shaders próprios, partículas entre outros. tudo isso usando a URP (Universal Rendering Pipeline) para obter o melhor desempenho possivel.</div>
+        </div>
+      </div>
+
+      <!-- === COLUNA DIREITA (APK + CONTATOS) === -->
+      <aside>
+        <div class="apk-card card">
+          <div class="apk-title">Download do executável do jogo</div>
+          <div class="meta"> <!-- EDITAR: versão / tamanho -->
+            <div>Tamanho: <!-- EDITAR --> 700 MB</div>
+            <div>Plataforma: Windows 10 e 11 64-bits</div>
+          </div>
+
+          <!-- BOTÃO FUTURISTA -->
+          <!-- EDITAR: colocar o link direto do APK no atributo href -->
+          <a class="btn-apk" href="https://drive.google.com/file/d/1lz5Z5nDzv9kREzjzSXQDeIqIuAFix6DD/view?usp=sharing" download>
+            <span class="icon">⬇</span>
+            <span>Baixar o executável</span>
+          </a>
+          <a class="btn-apk" href="https://drive.google.com/file/d/1lz5Z5nDzv9kREzjzSXQDeIqIuAFix6DD/view?usp=sharing" download>
+            <span class="icon">⬇</span>
+            <span>Projeto no GitHub</span>
+          </a>
+
+        <!-- METADADOS E LINKS ADICIONAIS -->
+        <div class="card" style="padding:12px;text-align:left">
+          <strong>Informações técnicas</strong>
+          <div class="meta" style="margin-top:8px">
+            <!-- EDITAR: aqui você pode colocar engine, versão, requisitos etc. -->
+            <div>Engine: Unity (URP) — <!-- EDITAR: versão --> 6000.2.9f1</div>
+          </div>
+        </div>
+
+<div class="contact-card">
+  <strong>Contato e Portfólio</strong>
+  <div class="contacts">
+
+    <!-- Lista de contatos mais compacta e em linha -->
+    <div class="contact-list" style="display:flex; justify-content:center; gap:6px; flex-wrap:nowrap; margin-top:8px;">
+      <a href="https://www.instagram.com/professor.josivan" target="_blank" rel="noopener"
+         style="background:#e4405f; color:#fff; padding:4px 10px; border-radius:6px; text-decoration:none; font-size:12px; font-weight:600; display:flex; align-items:center; gap:4px; white-space:nowrap;">
+         📸 Instagram
+      </a>
+      <a href="https://api.whatsapp.com/send/?phone=%2B5581985025359&text&type=phone_number&app_absent=0" target="_blank" rel="noopener"
+         style="background:#25d366; color:#fff; padding:4px 10px; border-radius:6px; text-decoration:none; font-size:12px; font-weight:600; display:flex; align-items:center; gap:4px; white-space:nowrap;">
+         💬 WhatsApp
+      </a>
+      <a href="https://www.behance.net/josivansilva2" target="_blank" rel="noopener"
+         style="background:#1769ff; color:#fff; padding:4px 10px; border-radius:6px; text-decoration:none; font-size:12px; font-weight:600; display:flex; align-items:center; gap:4px; white-space:nowrap;">
+         🎨 Behance
+      </a>
+    </div>
+
+    <!-- CTA para contratação -->
+    <div class="cta" 
+         onclick="location.href='https://api.whatsapp.com/send/?phone=%2B5581985025359&text&type=phone_number&app_absent=0'" 
+         style="margin-top:14px;">
+      Entre em contato
+    </div>
+
+  </div>
+</div>
+
+      </aside>
+    </main>
+
+    <footer>
+      <!-- EDITAR: rodapé com créditos -->
+      © <!-- EDITAR: ano --> 2025 — Templo de Zeus - Vaga: Tech Artist • Desenvolvido por Josivan Pedro da Silva
+    </footer>
+  </div>
+</body>
+</html>
