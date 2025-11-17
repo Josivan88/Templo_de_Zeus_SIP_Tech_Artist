@@ -17,7 +17,7 @@ Plataformas Alvo: PC / Windows 64 bits
 
 **Shaders**
 ---
-Contidos na pasta: Asstes/Shaders
+Contidos na pasta: Assets/Shaders
 
 Shader 1: BrightDissolve
 Função: Efeito de dissolução, permite controle da direção, cor, cor da borda, evolução, intensidade, influência do ruido (frequência e velocidade)
