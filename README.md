@@ -1,6 +1,9 @@
 Este é um projeto de Tech Art desenvolvido na Unity URP (Universal Render Pipeline), focado em performance para plataformas de recursos limitados. A cena convida a uma experiência imersiva no Templo de Zeus, onde cada elemento visual serve como prova de domínio técnico. O projeto apresenta 12 shaders customizados (incluindo raycasts dinâmicos e materiais holográficos) e sistemas de VFX complexos, todos otimizados por meio de técnicas avançadas como Pooling de objetos, Bake de iluminação e Vertex Colors para garantir a máxima qualidade visual com framerate fluido.
 
 ![Screenshot do Templo de Zeus](https://i.imgur.com/MT4sWo1.jpeg)
+![Screenshot do Templo de Zeus](https://i.imgur.com/NDrmxHs.jpeg)
+![Screenshot do Templo de Zeus](https://i.imgur.com/JQbUlWi.jpeg)
+![Screenshot do Templo de Zeus](https://i.imgur.com/qyNSXDN.jpeg)
 
 Versão da Unity e Pipeline Utilizada
 
