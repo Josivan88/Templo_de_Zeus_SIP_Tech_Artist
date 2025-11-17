@@ -1,19 +1,21 @@
-Este é um projeto de Tech Art desenvolvido na Unity URP (Universal Render Pipeline), focado em performance para plataformas de recursos limitados. A cena convida a uma experiência imersiva no Templo de Zeus, onde cada elemento visual serve como prova de domínio técnico. O projeto apresenta 12 shaders customizados (incluindo raycasts dinâmicos e materiais holográficos) e sistemas de VFX complexos, todos otimizados por meio de técnicas avançadas como Pooling de objetos, Bake de iluminação e Vertex Colors para garantir a máxima qualidade visual com framerate fluido.
+Este é um projeto de Tech Art desenvolvido na Unity URP (Universal Render Pipeline), focado em performance para plataformas de recursos limitados. A cena convida a uma experiência imersiva no Templo de Zeus, onde cada elemento visual serve como prova de domínio técnico. O projeto apresenta 12 shaders customizados (incluindo materiais holográficos) e sistemas de VFX complexos, todos otimizados por meio de técnicas avançadas como Pooling de objetos, Bake de iluminação e Vertex Colors para garantir a máxima qualidade visual com framerate fluido.
 
 ![Screenshot do Templo de Zeus](https://i.imgur.com/MT4sWo1.jpeg)
 ![Screenshot do Templo de Zeus](https://i.imgur.com/NDrmxHs.jpeg)
 ![Screenshot do Templo de Zeus](https://i.imgur.com/JQbUlWi.jpeg)
 ![Screenshot do Templo de Zeus](https://i.imgur.com/qyNSXDN.jpeg)
 
-Versão da Unity e Pipeline Utilizada
+**Versão da Unity e Pipeline Utilizada**
+---
 
 Unity: 6000.2.9f1
 Pipeline Gráfico: URP
 Plataformas Alvo: PC / Windows 64 bits
 
-Shaders e Efeitos Visuais Criados
+**Shaders e Efeitos Visuais Criados**
 
-Shaders
+**Shaders**
+---
 
 Shader 1: BrightDissolve
 Função: Efeito de dissolução, permite controle da direção, cor, cor da borda, evolução, intensidade, influência do ruido (frequência e velocidade)
@@ -64,8 +66,8 @@ Shader 12: UVPanTransparency
 Função: Similar ao DirectionalWindEffect, mas voltado para efeitos realistassem brilho próprio, permite controlar cor, texturas de nuvens, repetição (tiling) velocidade em x e em y
 
 
-
-Efeitos Visuais (VFX)
+**Efeitos Visuais (VFX)**
+---
 
 Fora do templo:
 
@@ -89,41 +91,45 @@ VFX 7: [Efeito de revelação do card: (RevelationEffect) é uma demonstração 
 VFX 8: [Fumaça constante atrás da carta: (InverseHemisphere) Uma semi esfera sempre apontada para a câmera e com um material com o shader DirectionalWindEffect dá a impressão de fumaça sempre atrás da carta]
 
 
-Tema Escolhido e Justificativa Artística
+**Tema Escolhido e Justificativa Artística**
+---
 
-Tema: Zeus
+**Tema: Zeus**
 
 Motivação Artística:
 Pretendi passar uma atmosfera divina, iluminada e positiva ao mesmo tempo realista e mística, usei azul e dourado na maioria dos elementos principais, procurei definir um ambiente sempre influenciado por nuvens.
 Criei efeitos condizentes com o principal deus do olimpo, envolvendo raios, luzes e poder.
 
-Técnicas de Otimização Aplicadas
+**Técnicas de Otimização Aplicadas**
+---
 
-Pooling de Objetos: reutilização de raios no dedo de Zeus e na revelação da carta
-Shaders otimizados: redução de instruções, nós simplificados
-LOD (Level of Detail): aplicado às árvores para simplificação de modelos distantes
-Bake de Iluminação: para diminuir o impacto do uso de vários efeitos luminosos
-Compressão de Texturas: sempre que possivel, com resolução mais baixa possivel mas garantindo qualidade visual, resolução sempre que possível em potências de dois
-Redução de Draw Calls: usando o mesmo material e texturas para diversos objetos, como as pedras
-Evitar Overdraw Excessivo em partículas: diminui sempre que possível o número de partículas para apenas o essencial
-Occlusion culling: para ocultação de objetos não visíveis
+Pooling de Objetos: reutilização de raios no dedo de Zeus e na revelação da carta.
+Shaders otimizados: redução de instruções, nós simplificados.
+LOD (Level of Detail): aplicado às árvores para simplificação de modelos distantes.
+Bake de Iluminação: para diminuir o impacto do uso de vários efeitos luminosos.
+Compressão de Texturas: sempre que possível, com resolução mais baixa possível, mas garantindo qualidade visual, resolução sempre que possível em potências de dois.
+Redução de Draw Calls: usando o mesmo material e texturas para diversos objetos, como as pedras.
+Evitar Overdraw Excessivo em partículas: diminui sempre que possível o número de partículas para apenas o essencial.
+Occlusion culling: para ocultação de objetos não visíveis.
 
-Controles Básicos
+**Controles Básicos**
+---
 
 Movimentação: [WASD se move na direção desejada, Shift: corre, Espaço: pula]
 Interações: [Mouse: olha ao redor]
 Habilidades / Ações especiais: [botão direito do mouse: zoom]
 
-Como Executar o Projeto
+**Como Executar o Projeto**
+---
 
-via executável: 
+**via executável:**
 certifique-se de que tem um PC com windows 10 ou 11 de 64 bits
 CPU: processador de 6 núcleus ou mais
 GPU: GTX 1060 ou superior
 baixe https://drive.google.com/drive/folders/1aqeH-CxilTq41tW0ORfh5N35469YYvE5?usp=sharing
 clique em TemploDeZeus_TesteSIP.exe
 
-Via projeto:
+**Via projeto:**
 https://github.com/Josivan88/Templo_de_Zeus_SIP_Tech_Artist
 Abra o projeto na Unity versão indicada:
 Unity 6000.2.9f1
