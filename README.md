@@ -13,9 +13,11 @@ Pipeline Gráfico: URP
 Plataformas Alvo: PC / Windows 64 bits
 
 **Shaders e Efeitos Visuais Criados**
+---
 
 **Shaders**
 ---
+Contidos na pasta: Asstes/Shaders
 
 Shader 1: BrightDissolve
 Função: Efeito de dissolução, permite controle da direção, cor, cor da borda, evolução, intensidade, influência do ruido (frequência e velocidade)
@@ -124,7 +126,7 @@ Habilidades / Ações especiais: [botão direito do mouse: zoom]
 
 **via executável:**
 certifique-se de que tem um PC com windows 10 ou 11 de 64 bits
-CPU: processador de 6 núcleus ou mais
+CPU: processador de 6 núcleos ou mais
 GPU: GTX 1060 ou superior
 baixe https://drive.google.com/drive/folders/1aqeH-CxilTq41tW0ORfh5N35469YYvE5?usp=sharing
 clique em TemploDeZeus_TesteSIP.exe
